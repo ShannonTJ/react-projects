@@ -57,8 +57,8 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: var(--clr-pink);
   color: var(--clr-grey-9);
   line-height: 1.5;
@@ -188,4 +188,22 @@ main {
   border-radius: var(--radius);
   outline: 1px solid rgba(242, 138, 178, 0.8);
   cursor: pointer;
+}
+
+div.outer {
+  width: 100%;
+  text-align: center;
+}
+
+h4.inner {
+  display: inline-block;
+}
+
+button.inner {
+  padding: 0.5rem 0;
+  margin: 0 0 0 0;
+  width: 30%;
+  font-size: 0.75rem;
+  display: inline-block;
+  float: right;
 }

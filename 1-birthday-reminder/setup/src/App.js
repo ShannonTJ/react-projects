@@ -5,19 +5,10 @@ function App() {
 
 const [people, setPeople] = useState(data);
 
-  function displayText(length) {
-      if(length === 1) {
-        return <h3>{length} birthday today</h3>;
-      }
-      else {
-        return <h3>{length} birthdays today</h3>;
-      }    
-  }
-
   return (
   <main>
     <section className='container'>
-      {displayText(people.length)}
+      <h3>{people.length === 1? people.length + ' birthday today' : people.length + ' birthdays today'}</h3>
       <List people={people} setPeople={setPeople}></List>
       <button className='btn' onClick={() => setPeople([])}>Clear All</button>
     </section>

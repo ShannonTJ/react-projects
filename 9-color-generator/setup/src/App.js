@@ -6,9 +6,10 @@ import Values from "values.js";
 function App() {
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
-  const [list, setList] = useState(new Values("#f15205").all(10));
+  const [list, setList] = useState(new Values("#555677").all(10));
 
   const darkText = `#${list[list.length - 3].hex}`;
+  const lightText = `#${list[2].hex}`;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,6 +17,7 @@ function App() {
     try {
       let colors = new Values(color).all(10);
       setList(colors);
+      setError(false);
     } catch (error) {
       setError(true);
       console.log(error);
@@ -47,6 +49,7 @@ function App() {
               {...color}
               index={index}
               hex={color.hex}
+              lightText={lightText}
               darkText={darkText}
             />
           );

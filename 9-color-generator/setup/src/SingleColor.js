@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import rgbToHex from "./utils";
 
-const SingleColor = ({ rgb, weight, index, hex, darkText }) => {
+const SingleColor = ({ rgb, weight, index, hex, lightText, darkText }) => {
   const [alert, setAlert] = useState(false);
   const bcg = rgb.join(",");
   const hexValue = `#${hex}`;
@@ -13,7 +13,7 @@ const SingleColor = ({ rgb, weight, index, hex, darkText }) => {
     return () => clearTimeout(timeout);
   }, [alert]);
 
-  let textColor = "#ffffff";
+  let textColor = lightText;
   if (index < 10) {
     textColor = darkText;
   }

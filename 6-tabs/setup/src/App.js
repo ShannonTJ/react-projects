@@ -31,7 +31,7 @@ function App() {
     );
   }
 
-  //destructure array data
+  //destructure array data after loading
   const { company, dates, duties, title } = jobs[value];
 
   return (

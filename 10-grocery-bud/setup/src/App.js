@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import List from "./List";
 import Alert from "./Alert";
 
+//preserve list between refreshes
 const getLocalStorage = () => {
   let list = localStorage.getItem("list");
   if (list) {
@@ -28,7 +29,7 @@ function App() {
       //don't allow empty values
       showAlert(true, "danger", "please enter a value");
     } else if (name && isEditing) {
-      //do editing
+      //edit item in list
       setList(
         list.map((item) => {
           if (item.id === editID) {
@@ -50,6 +51,7 @@ function App() {
     }
   };
 
+  //parameters are es6
   const showAlert = (show = false, type = "", msg = "") => {
     setAlert({ show, type, msg });
   };

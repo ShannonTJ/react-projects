@@ -8,22 +8,22 @@ export const links = [
   },
   {
     id: 2,
-    url: "/about",
+    url: "/",
     text: "about",
   },
   {
     id: 3,
-    url: "/projects",
+    url: "/",
     text: "projects",
   },
   {
     id: 4,
-    url: "/contact",
+    url: "/",
     text: "contact",
   },
   {
     id: 5,
-    url: "/profile",
+    url: "/",
     text: "profile",
   },
 ];

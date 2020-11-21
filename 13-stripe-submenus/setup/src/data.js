@@ -1,28 +1,28 @@
-import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
-import React from 'react';
+import { FaCreditCard, FaBook, FaBriefcase } from "react-icons/fa";
+import React from "react";
 const sublinks = [
   {
-    page: 'products',
+    page: "products",
     links: [
-      { label: 'payment', icon: <FaCreditCard />, url: '/products' },
-      { label: 'terminal', icon: <FaCreditCard />, url: '/products' },
-      { label: 'connect', icon: <FaCreditCard />, url: '/products' },
+      { label: "payment", icon: <FaCreditCard />, url: "#" },
+      { label: "terminal", icon: <FaCreditCard />, url: "#" },
+      { label: "connect", icon: <FaCreditCard />, url: "#" },
     ],
   },
   {
-    page: 'developers',
+    page: "developers",
     links: [
-      { label: 'plugins', icon: <FaBook />, url: '/products' },
-      { label: 'libraries', icon: <FaBook />, url: '/products' },
-      { label: 'help', icon: <FaBook />, url: '/products' },
-      { label: 'billing', icon: <FaBook />, url: '/products' },
+      { label: "plugins", icon: <FaBook />, url: "#" },
+      { label: "libraries", icon: <FaBook />, url: "#" },
+      { label: "help", icon: <FaBook />, url: "#" },
+      { label: "billing", icon: <FaBook />, url: "#" },
     ],
   },
   {
-    page: 'company',
+    page: "company",
     links: [
-      { label: 'about', icon: <FaBriefcase />, url: '/products' },
-      { label: 'customers', icon: <FaBriefcase />, url: '/products' },
+      { label: "about", icon: <FaBriefcase />, url: "#" },
+      { label: "customers", icon: <FaBriefcase />, url: "#" },
     ],
   },
 ];
